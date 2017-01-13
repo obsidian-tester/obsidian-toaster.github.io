@@ -5,7 +5,7 @@ set -e
 echo "---> Installing application source"
 cp -Rf /tmp/src/. ./
 
-if [ -n "$FORGE_URL"]; then
+if [ -n "$FORGE_URL" ]; then
   json="{\n
            \"forge_url\": \"http://generator-backend-obsidian.e8ca.engint.openshiftapps.com/forge\"\n
         }"
