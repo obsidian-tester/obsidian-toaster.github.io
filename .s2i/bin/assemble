@@ -10,7 +10,6 @@ if [ -n "$FORGE_URL" ]; then
            \"forge_url\": \"http://generator-backend-obsidian.e8ca.engint.openshiftapps.com/forge\"\n
         }"
   echo -e $json > ./settings.json
-  cat ./settings.json
 fi
 
 if [ -d ./nginx-cfg ]; then
