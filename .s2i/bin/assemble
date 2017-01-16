@@ -7,7 +7,7 @@ cp -Rf /tmp/src/. ./
 
 if [ -n "$FORGE_URL" ]; then
   json="{\n
-           \"forge_url\": \"http://generator-backend-obsidian.e8ca.engint.openshiftapps.com/forge\"\n
+           \"forge_url\": $FORGE_URL\n
         }"
   echo -e $json > ./settings.json
 fi
