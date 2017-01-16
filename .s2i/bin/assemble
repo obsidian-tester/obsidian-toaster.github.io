@@ -7,7 +7,7 @@ cp -Rf /tmp/src/. ./
 
 if [ $FORGE_URL ]; then
   json="{\n
-           \"forge_url\": \"$FORGE_URL\/forge\"\n
+           \"forge_url\": \"$FORGE_URL/forge\"\n
         }"
   echo -e $json > ./settings.json
 fi
