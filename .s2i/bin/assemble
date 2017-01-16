@@ -5,9 +5,9 @@ set -e
 echo "---> Installing application source"
 cp -Rf /tmp/src/. ./
 
-if [ -n "$FORGE_URL" ]; then
+if [ $FORGE_URL ]; then
   json="{\n
-           \"forge_url\": $FORGE_URL\n
+           \"forge_url\": \"$FORGE_URL\"\n
         }"
   echo -e $json > ./settings.json
 fi
