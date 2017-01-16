@@ -12,7 +12,7 @@ if [ $FORGE_URL ]; then
   echo -e $json > ./settings.json
 fi
 
-echo ./settings.json
+cat ./settings.json
 
 if [ -d ./nginx-cfg ]; then
   echo "---> Copying nginx configuration files..."
